@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    font-size: 62.5%;
+    background-image: url(../images/bg-repeat.jpg);
+    background-size: contain;
+    min-height: 100vh;
+    
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.conteudo {
+    display: grid;
+    grid-template-areas: "texto formulario";
+    grid-template-columns: repeat(2, auto);
+    gap: 5rem;
+    margin: 0 auto;
+}
+
+.texto {
+    grid-area: texto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.texto .titulo {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+
+}
+.texto .instrucoes {
+    color:#fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.formulario {
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-color: #fff;
+    width: 35rem;
+    height: 38rem;
+    padding: 2rem;
+}
+.formulario .form-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 100%;
+    height: 20%; 
+}
+.formulario .form-content input {
+    height: 50%;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.formulario .form-content a {
+    font-weight: 300;
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    visibility: hidden;
+}
+.formulario .form-content textarea {
+    height: 100%;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    resize: none;
+}
+
+.formulario p {
+    margin-right: 16rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.formulario button {
+    width: 100%;
+    height: 13%;
+    color: #fff;
+    background-color:#3CCC87;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+.form-content.error input, .form-content.error textarea {
+    border: 2px solid #FF3B25;
+}
+.form-content.error a {
+    color: #FF3B25;
+    visibility: visible;
+}
+.form-content.preenchido input, .form-content.preenchido textarea {
+    border: 2px solid green;
+}
+
+
+
+

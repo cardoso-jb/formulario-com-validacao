@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <title>Quest JS - Formulário com Validação</title>
+</head>
+<body>
+    <main>
+        <div class="conteudo">
+            <div class="texto">
+                <h1 class="titulo">
+                    FICOU COM DÚVIDA?
+                    <br>
+                    NOS MANDE UMA MENSAGEM!
+                </h1>
+                <p class="instrucoes">
+                    Caso tenha ficado com qualquer dúvida
+                    <br>
+                    basta nos mandar uma mensagem
+                    <br>
+                    e entraremos em contato em menos de 24h.
+                </p>
+            </div>
+
+            <form class="formulario" id="form">
+                <div class="form-content">
+                    <input class="item" type="text" placeholder="Nome Completo*" id="nome">
+                    <a class="alerta exibir">Campo Obrigatório</a>
+                </div>
+
+                <div class="form-content">
+                    <input class="item" type="email" placeholder="E-Mail*" id="email">
+                    <a class="alerta exibir">Campo Obrigatório</a>
+                </div>
+
+                <div class="form-content">
+                    <input class="item" type="tel" placeholder="Telefone*" id="telefone">
+                    <a class="alerta exibir">Campo Obrigatório</a>
+                </div>
+
+                <div class="form-content">
+                    <textarea class="item" placeholder="Mensagem*" id="mensagem"></textarea>
+                    <a class="alerta exibir">Campo Obrigatório</a>
+                </div>
+
+                <p class="legenda">*Campos Obrigatórios</p>
+                <button type="submit" id="submit">Enviar</button>
+
+            </form>
+        </div>
+    </main>
+
+    <script src="src/js/validacao.js"></script>
+</body>
+</html>
